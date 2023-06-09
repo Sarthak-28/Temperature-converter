@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="container-a">
+        <img src="Image/celsius.png" class="image1">
+    </div>
+    <section class="box">
+        <div class="heading">
+            Temperature Converter
+        </div>
+        <div class="upper-part">
+            <span class="container1">
+                Value to<br>convert
+                <input type="number" name="inputdata" id="inputdata">
+            </span>
+            <span class="cotainer2"> From:
+                <select name="inputtype" id="inputtype">
+                    <option value="celsius">Celsius (C)</option>
+                    <option value="fahrenheit">Fahrenheit (F)</option>
+                </select>
+            </span>
+        </div>
+        <div class="btn">
+            <input type="button" value="Convert" class="convert" onclick="convert()">
+        </div>
+
+        <div class="result">
+            Result:
+        </div>
+        <div class="output-data">
+            Celsius:
+            <input type="number" name="cel" id="answerCel">
+            Fahrenheit:
+            <input type="number" name="fah" id="answerFah">
+        </div>
+    </section>
+
+    <div class="container-b">
+        <img src="Image/fahrenheit.png" class="image2">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
